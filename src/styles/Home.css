@@ -1,0 +1,87 @@
+/* home.css */
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff; /* Default light mode background */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: #1a202c; /* Default text color */
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-list {
+  padding-left: 1.5rem;
+}
+
+.profile-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;  /* You can adjust the size */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;  /* Ensures image fits within the circle */
+  border: 2px solid #ddd;  /* Optional: border around the image */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* Scales the image on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow when hovered */
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  .hero-section {
+      background: #2d3748; /* Dark background for the hero section */
+  }
+  .hero-title, .hero-subtitle, .hero-description {
+      color: #f7fafc; /* Light text for dark mode */
+  }
+}
+
+/* Light mode variables (default) */
+[data-theme="light"] {
+  .hero-section {
+      background: #ffffff; /* Light background for the hero section */
+  }
+  .hero-title, .hero-subtitle, .hero-description {
+      color: #1a202c; /* Dark text for light mode */
+  }
+}
