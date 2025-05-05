@@ -1,0 +1,16 @@
+/* index.css or your global CSS */
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --text-primary: #ffffff;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 300ms ease, color 300ms ease;
+}
